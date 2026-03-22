@@ -87,6 +87,91 @@
     color: #edc00c;
 }
 
+/* --- Festival Page Specifics --- */
+
+.festival-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/banner_hero/image_festivafield.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* We use a slightly different accent color for Festivals - maybe a "Safety Orange" or "Electric Blue" */
+.festival-accent {
+    background: #00adb5 !important; /* Teal accent to differentiate from the Gold live page */
+    color: #fff !important;
+}
+
+/* If you want the service boxes to match the teal on this page */
+.stats-bar + .project-details .service-box {
+    border-left: 4px solid #00adb5;
+}
+
+.festival-bg + .stats-bar + .project-details .service-box h3 {
+    color: #00adb5;
+}
+
+.corporate-bg {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/banner_hero/image_corporate.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Community Page Specifics --- */
+
+.community-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/banner_hero/image_community.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Trustworthy Green/Teal accent */
+.community-accent {
+    background: #2a275a !important; /* Forest Green representing growth/community */
+    color: #fff !important;
+}
+
+.community-bg + .stats-bar + .project-details .service-box {
+    border-left: 4px solid #2a275a;
+}
+
+.community-bg + .stats-bar + .project-details .service-box h3 {
+    color: #7c72ff;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* --- Rave Page Specifics --- */
+
+.rave-bg {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../assets/banner_hero/image_ravelaser.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Electric Cyan Accent */
+.rave-accent {
+    background: #00f2ff !important; 
+    color: #000 !important;
+}
+
+.rave-bg + .stats-bar + .project-details .service-box {
+    border-left: 4px solid #00f2ff;
+}
+
+.rave-bg + .stats-bar + .project-details .service-box h3 {
+    color: #00f2ff;
+}
+
+/* Optional: Make the rave page text feel a bit more "digital" */
+.rave-bg h1 {
+    text-shadow: 0 0 20px #00f2ff;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .project-gallery { grid-template-columns: 1fr; }
@@ -94,3 +179,4 @@
     .gallery-item img, .gallery-item.large img { height: 250px; }
     .stats-bar { flex-direction: column; gap: 20px; }
 }
+
