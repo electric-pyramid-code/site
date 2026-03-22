@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Pyramid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="#" class="brand-wrapper">
+        <div class="logo-container">
+            <img src="./main/assets/spinning_logo/triangle.png" class="triangle" alt="Electric Pyramid Logo">
+        </div>
+        <div class="logo">ELECTRIC<span> PYRAMID</span></div>
+    </a>
+    
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./main/pages/hire/hire.html">Hire <span class="hide-mobile">Equipment</span></a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="main/pages/projects/project-livevents.html">Live Events</a>
+                <a href="main/pages/projects/project-weddings.html">Weddings Events</a>
+                <a href="main/pages/projects/project-corperate.html">Corporate Events</a>
+                <a href="main/pages/projects/project-festivals.html">Festivals & Outdoor</a>
+                <a href="main/pages/projects/project-community.html">Community Events</a>>
+            </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<!-- end of nav -->
+
+    <header class="hero">
+        <div class="hero-bg active" id="bg1"></div>
+        <div class="hero-bg" id="bg2"></div>
+
+        <div class="hero-text">
+            <h1>Electric Pyramid</h1>
+            <p>Sound, lighting and staging solutions tailored for any venue.</p> 
+            <p>Professional grade equipment for hire or full-service delivery.</p>
+            <div class="spacer"></div>
+            <a href="#contact" class="btn-main">Get a Quote</a>
+        </div>
+    </header>
+
+    <hr class="section-divider">
+
+    <section id="contact" class="enquiry-section">
+        <div class="enquiry-container">
+            <h2>Project Enquiry</h2>
+            <p>Tell us about your event and we'll get back to you with a custom solution.</p>
+            
+            <form id="enquiry-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <input type="text" placeholder="Event Location & Date">
+                <select class="form-select">
+                    <option value="" disabled selected>Select Event Type</option>
+                    <option value="concert">Live Concert / Festival</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="wedding">Wedding / Private Party</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Describe your sound and lighting needs..." rows="6"></textarea>
+                <button type="submit" class="btn-submit">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <footer class="footer">
+        <p>&copy; 2026 Electric Pyramid Productions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
