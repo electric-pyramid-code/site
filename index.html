@@ -55,29 +55,29 @@
     <hr class="section-divider">
 
     <section id="contact" class="enquiry-section">
-        <div class="enquiry-container">
-            <h2>Project Enquiry</h2>
-            <p>Tell us about your event and we'll get back to you with a custom solution.</p>
-            
-            <form id="enquiry-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <input type="text" placeholder="Event Location & Date">
-                <select class="form-select">
-                    <option value="" disabled selected>Select Event Type</option>
-                    <option value="concert">Live Concert / Festival</option>
-                    <option value="corporate">Corporate Event</option>
-                    <option value="wedding">Wedding / Private Party</option>
-                    <option value="other">Indoor Raves / Warehouse</option>
-                    <option value="other">Other</option>
-                </select>
-                <textarea placeholder="Describe your sound and lighting needs..." rows="6"></textarea>
-                <button type="submit" class="btn-submit">Submit Request</button>
-            </form>
-        </div>
-    </section>
+    <div class="enquiry-container">
+        <h2>Project Enquiry</h2>
+        <p>Tell us about your event and we'll get back to you with a custom solution.</p>
+        
+        <form id="enquiry-form">
+            <div class="form-row">
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <input type="text" name="eventDetails" placeholder="Event Location & Date">
+            <select name="eventType" class="form-select">
+                <option value="" disabled selected>Select Event Type</option>
+                <option value="concert">Live Concert / Festival</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="wedding">Wedding / Private Party</option>
+                <option value="other">Indoor Raves / Warehouse</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="message" placeholder="Describe your sound and lighting needs..." rows="6"></textarea>
+            <button type="submit" class="btn-submit">Submit Request</button>
+        </form>
+    </div>
+</section>
 
     <hr class="section-divider">
 
@@ -86,5 +86,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="api/vercel.js"></script>
+    <script src="api/contact.js"></script>
 </body>
 </html>
