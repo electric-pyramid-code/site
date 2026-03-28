@@ -1,24 +1,24 @@
 {
-  "name": "electricpyramid",  
+  "name": "electricpyramid",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev", 
-    "build": "next build",  // Make sure your Next.js build script is defined
-    "start": "next start",  // Make sure your Next.js start script is defined
-    "lint": "next lint"  // Optional: Adds a linting command if you use ESLint
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "nodemailer": "^6.7.2",  // Nodemailer for sending emails
-    "next": "^12.0.7",  // Add Next.js as a dependency (adjust version as necessary)
-    "react": "^17.0.2",  // React dependency (check compatibility with your Next.js version)
-    "react-dom": "^17.0.2"  // React DOM (ensure compatibility with your Next.js version)
+    "nodemailer": "^6.7.2",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",  // Optional: for linting your code
-    "eslint-config-next": "^12.0.7"  // Optional: to use Next.js linting configuration
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.7"
   },
   "engines": {
-    "node": "16.x"  // Optional: Specifies the Node.js version to use (adjust if needed)
+    "node": "16.x"
   },
-  "type": "module"  // Ensures you're using ESM (import/export) in your code
+  "type": "module"
 }
