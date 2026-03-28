@@ -7,14 +7,13 @@ export default async function handler(req, res) {
 
     // Set up the email transport configuration
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // Or use a different email provider
+      service: 'gmail',  // Or use another email provider if needed
       auth: {
         user: process.env.EMAIL_USER,  // Your email (from environment variables)
         pass: process.env.EMAIL_PASS,  // Your app password (for Gmail)
       },
     });
 
-    // Set up the email options
     const mailOptions = {
       from: email,  // Sender's email (user's email)
       to: process.env.RECEIVER_EMAIL,  // Your receiving email address
@@ -33,14 +32,13 @@ export default async function handler(req, res) {
     };
 
     try {
-      // Send the email
       await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).json({
         message: 'There was an error sending your message. Please try again later.',
-        error: error.message,  // Provide more specific error details for debugging
+        error: error.message,  // Send more error details to help debugging
       });
     }
   } else {
