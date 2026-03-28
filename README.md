@@ -1,1 +1,1 @@
-https://slawsimulation.github.io/Electric-Pyramid/
+https://electric-pyramid-code.github.io/site/
